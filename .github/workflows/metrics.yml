@@ -1,6 +1,6 @@
 name: Metrics
 on:
-  schedule: [{ cron: "0 * * * *" }]
+  schedule: [{ cron: "30 23 * * 7" }]
   push: { branches: ["master", "main"] }
   workflow_dispatch:
 jobs:
@@ -29,5 +29,3 @@ jobs:
           plugin_languages_details: percentage
           plugin_languages_limit: 10
           plugin_lines: yes
-          plugin_habits: yes
-          plugin_habits_facts: yes
